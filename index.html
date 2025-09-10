@@ -1,85 +1,179 @@
 <!doctype html>
-<div class="panel"><strong>Copertura in chiaro</strong><p class="mt">Capisci subito se il sinistro rientra: niente gergo, niente sorprese.</p></div>
-<div class="panel"><strong>Documenti automatici</strong><p>OCR estrae i dati utili da foto/PDF e precompila i moduli.</p></div>
-<div class="panel"><strong>Reclamo in PDF</strong><p>Genera un reclamo formale, pronto da inviare via PEC o email.</p></div>
-</div>
-</section>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sherlock – Assistenza & Verifiche</title>
+  <meta name="description" content="Sherlock analizza polizze, documenti e clausole. Verifica copertura e genera reclami in PDF." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased bg-[#0B1220] text-white">
+  <!-- NAV -->
+  <nav class="relative z-10 max-w-6xl mx-auto px-5 py-4 flex items-center">
+    <div class="flex items-center gap-3">
+      <div class="h-9 w-9 rounded-xl bg-white/10 flex items-center justify-center">🕵️‍♂️</div>
+      <span class="font-semibold tracking-wide">Sherlock</span>
+    </div>
+    <div class="ml-auto hidden md:flex items-center gap-6 text-sm text-white/80">
+      <a href="#demo" class="hover:text-white">Demo</a>
+      <a href="#features" class="hover:text-white">Funzioni</a>
+      <a href="#how" class="hover:text-white">Come funziona</a>
+      <a href="#faq" class="hover:text-white">FAQ</a>
+    </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWCNcASIFkap7D9jIKAMt_kZm6S5HOIRQAQb8S0R2CCWe9VQ/viewform?usp=dialog"
+       target="_blank" rel="noreferrer"
+       class="ml-4 inline-flex items-center h-10 px-4 rounded-xl bg-indigo-500 hover:bg-indigo-400 font-medium">
+      Unisciti ai tester
+    </a>
+  </nav>
 
+  <!-- HERO -->
+  <header class="relative z-10 max-w-6xl mx-auto px-5 pt-8 pb-16 md:pt-16 md:pb-24">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-semibold leading-[1.1]">
+          Reclami assicurativi <span class="text-indigo-400">senza panico</span>.
+        </h1>
+        <p class="mt-4 text-white/80 md:text-lg">
+          Sherlock analizza polizze, documenti e clausole. Ti dice se sei coperto, cosa manca e genera un reclamo in PDF in pochi tocchi.
+        </p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWCNcASIFkap7D9jIKAMt_kZm6S5HOIRQAQb8S0R2CCWe9VQ/viewform?usp=dialog"
+             target="_blank" rel="noreferrer"
+             class="inline-flex items-center justify-center h-12 px-6 rounded-2xl bg-indigo-500 hover:bg-indigo-400 font-semibold">
+            Unisciti ai tester
+          </a>
+          <a href="#demo" class="inline-flex items-center justify-center h-12 px-6 rounded-2xl bg-white/10 hover:bg-white/15 font-semibold">
+            Guarda la demo
+          </a>
+        </div>
+        <p class="mt-3 text-xs text-white/50">Early Access • Gratuito per i primi tester</p>
+      </div>
+      <div class="relative">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
+          <div class="rounded-2xl bg-[#0f1629] aspect-[9/5] flex items-center justify-center text-white/60">
+            <span class="text-sm">Demo: Verifica sinistro → OCR → PDF reclamo</span>
+          </div>
+        </div>
+        <div class="absolute -bottom-6 -right-6 hidden md:block">
+          <span class="inline-flex items-center h-8 px-3 rounded-full bg-white text-[#0B1220] text-sm font-semibold shadow">
+            v0.6 • Preview
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<section id="how" class="wrap section">
-<h2 style="font-size:28px;margin:0 0 8px">Come funziona</h2>
-<div class="grid3">
-<div class="panel"><div class="badge" style="background:var(--tone);color:#fff">1</div><div style="margin-left:4px"></div><strong> Verifica</strong><p style="margin-top:6px">Seleziona tipologia e importo, carica o scatta una foto della polizza.</p></div>
-<div class="panel"><div class="badge" style="background:var(--tone);color:#fff">2</div><strong> Estrai</strong><p style="margin-top:6px">L’OCR legge clausole, massimali, esclusioni e riempie i campi chiave.</p></div>
-<div class="panel"><div class="badge" style="background:var(--tone);color:#fff">3</div><strong> Genera</strong><p style="margin-top:6px">Ottieni un reclamo in PDF con riferimenti normativi e allegati.</p></div>
-</div>
-</section>
+  <!-- VALUE PROPS -->
+  <section id="features" class="relative z-10 max-w-6xl mx-auto px-5 py-10 md:py-14">
+    <h2 class="text-2xl md:text-3xl font-semibold">Perché usare Sherlock</h2>
+    <div class="mt-6 grid md:grid-cols-3 gap-4">
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <h3 class="font-semibold">Copertura in chiaro</h3>
+        <p class="mt-2 text-white/80 text-sm">Capisci subito se il sinistro rientra: niente gergo, niente sorprese.</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <h3 class="font-semibold">Documenti automatici</h3>
+        <p class="mt-2 text-white/80 text-sm">OCR estrae i dati utili da foto/PDF e precompila i moduli.</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <h3 class="font-semibold">Reclamo in PDF</h3>
+        <p class="mt-2 text-white/80 text-sm">Genera un reclamo formale, pronto da inviare via PEC o email.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- HOW IT WORKS -->
+  <section id="how" class="relative z-10 max-w-6xl mx-auto px-5 py-10 md:py-14">
+    <h2 class="text-2xl md:text-3xl font-semibold">Come funziona</h2>
+    <ol class="mt-6 grid md:grid-cols-3 gap-4">
+      <div class="relative rounded-2xl bg-white/5 border border-white/10 p-5">
+        <div class="absolute -top-3 -left-3 h-8 w-8 rounded-xl bg-indigo-500 text-white flex items-center justify-center font-semibold">1</div>
+        <h4 class="font-semibold ml-6">Verifica</h4>
+        <p class="mt-2 text-white/80 text-sm ml-6">Seleziona tipologia e importo, carica o scatta una foto della polizza.</p>
+      </div>
+      <div class="relative rounded-2xl bg-white/5 border border-white/10 p-5">
+        <div class="absolute -top-3 -left-3 h-8 w-8 rounded-xl bg-indigo-500 text-white flex items-center justify-center font-semibold">2</div>
+        <h4 class="font-semibold ml-6">Estrai</h4>
+        <p class="mt-2 text-white/80 text-sm ml-6">L’OCR legge clausole, massimali, esclusioni e riempie i campi chiave.</p>
+      </div>
+      <div class="relative rounded-2xl bg-white/5 border border-white/10 p-5">
+        <div class="absolute -top-3 -left-3 h-8 w-8 rounded-xl bg-indigo-500 text-white flex items-center justify-center font-semibold">3</div>
+        <h4 class="font-semibold ml-6">Genera</h4>
+        <p class="mt-2 text-white/80 text-sm ml-6">Ottieni un reclamo in PDF con riferimenti normativi e allegati.</p>
+      </div>
+    </ol>
+  </section>
 
-<section id="demo" class="wrap section">
-<div class="panel">
-<div class="heroGrid" style="align-items:center">
-<div>
-<h3 style="margin:0 0 6px">Demo guidata</h3>
-<p>Una rapida anteprima del flusso reale: verifica copertura, acquisizione documenti, reclamo.</p>
-<div class="stack">
-<span class="chip">OCR</span><span class="chip">PDF</span><span class="chip">Privacy by design</span><span class="chip">Offline-first (WIP)</span>
-</div>
-<div class="stack" style="margin-top:12px">
-<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeWCNcASIFkap7D9jIKAMt_kZm6S5HOIRQAQb8S0R2CCWe9VQ/viewform?usp=dialog/viewform" target="_blank" rel="noreferrer">Prova la versione tester</a>
-<a class="btn ghost" href="mailto:stefano.scapigliati@gmail.com?subject=Feedback%20Sherlock&body=Ciao%20Stefano,%20ecco%20il%20mio%20feedback%20su%20Sherlock:%0A-%20Cosa%20mi%20piace:%0A-%20Cosa%20manca:%0A-%20Pagherei%20(€/mese):%0A">Invia feedback</a>
-</div>
-<p style="font-size:12px;color:rgba(255,255,255,.5)">Partecipa e dicci: quanto saresti disposto a pagare? (€/mese)</p>
-</div>
-<div class="panel" style="background:var(--panel);height:0;padding-bottom:60%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.6)">Qui potrai incorporare una GIF o uno short video demo</div>
-</div>
-</div>
-</section>
+  <!-- DEMO -->
+  <section id="demo" class="relative z-10 max-w-6xl mx-auto px-5 py-10 md:py-14">
+    <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h3 class="text-xl md:text-2xl font-semibold">Demo guidata</h3>
+          <p class="mt-2 text-white/80">Anteprima flusso: verifica copertura, acquisizione documenti, reclamo.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-sm">
+            <span class="inline-flex items-center h-7 px-3 rounded-full bg-white/10 border border-white/10">OCR</span>
+            <span class="inline-flex items-center h-7 px-3 rounded-full bg-white/10 border border-white/10">PDF</span>
+            <span class="inline-flex items-center h-7 px-3 rounded-full bg-white/10 border border-white/10">Privacy by design</span>
+            <span class="inline-flex items-center h-7 px-3 rounded-full bg-white/10 border border-white/10">Offline-first (WIP)</span>
+          </div>
+          <div class="mt-5 flex gap-3">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWCNcASIFkap7D9jIKAMt_kZm6S5HOIRQAQb8S0R2CCWe9VQ/viewform?usp=dialog"
+               target="_blank" rel="noreferrer"
+               class="inline-flex items-center justify-center h-11 px-5 rounded-2xl bg-indigo-500 hover:bg-indigo-400 font-semibold">
+              Prova la versione tester
+            </a>
+            <a href="mailto:stefano.scapigliati@gmail.com?subject=Feedback%20Sherlock&body=Ciao%20Stefano,%20ecco%20il%20mio%20feedback..." 
+               class="inline-flex items-center justify-center h-11 px-5 rounded-2xl bg-white/10 hover:bg-white/15 font-semibold">
+              Invia feedback
+            </a>
+          </div>
+          <p class="mt-2 text-xs text-white/50">Dicci: quanto saresti disposto a pagare? (€/mese)</p>
+        </div>
+        <div class="rounded-2xl bg-[#0f1629] aspect-[9/6] flex items-center justify-center text-white/60">
+          <span class="text-sm">Qui inseriremo una GIF o video demo</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- FAQ -->
+  <section id="faq" class="relative z-10 max-w-6xl mx-auto px-5 py-10 md:py-14">
+    <h2 class="text-2xl md:text-3xl font-semibold">FAQ</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-4">
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <h4 class="font-semibold">È già su Play Store?</h4>
+        <p class="mt-2 text-white/80 text-sm">In closed testing. Lascia la tua email e ti mando il link.</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <h4 class="font-semibold">I miei documenti sono al sicuro?</h4>
+        <p class="mt-2 text-white/80 text-sm">Sì, elaborazione in locale quando possibile; altrimenti cifratura end-to-end.</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <h4 class="font-semibold">Serve un account PEC?</h4>
+        <p class="mt-2 text-white/80 text-sm">No, la PEC è consigliata ma facoltativa.</p>
+      </div>
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+        <h4 class="font-semibold">Funziona con tutte le polizze?</h4>
+        <p class="mt-2 text-white/80 text-sm">Casa e infortuni iniziali; ampliamento graduale.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="wrap section">
-<div class="panel">
-<h3>Perché adesso</h3>
-<p>Il settore assicurativo è complesso e pieno di frizioni. Sherlock nasce dall’esperienza reale di chi ha dovuto gestire sinistri, esclusioni e risposte evasive. Condividiamo un percorso trasparente: se la nostra vertenza farà notizia, diventerà il vostro caso di studio.</p>
-<div style="margin-top:6px;color:rgba(255,255,255,.6);font-size:14px">Storytelling in costruzione • Case study pubblico in arrivo</div>
-</div>
-</section>
+  <!-- FOOTER -->
+  <footer class="relative z-10 max-w-6xl mx-auto px-5 pb-10">
+    <div class="h-px bg-white/10"></div>
+    <div class="mt-4 flex items-center justify-between text-white/60 text-sm">
+      <div class="flex items-center gap-2">
+        <img src="favicon.svg" alt="ScapsLab" class="h-4 w-4 opacity-80" />
+        <span>ScapsLab</span>
+      </div>
+      <div>© <span id="year"></span> Sherlock</div>
+    </div>
+  </footer>
 
-
-<section class="wrap section">
-<h3>Quanto vale per te?</h3>
-<p>Seleziona l’interesse: ci aiuta a definire il prezzo giusto.</p>
-<div class="stack">
-<a class="btn ghost" href="mailto:stefano.scapigliati@gmail.com?subject=Pricing%20intent%20Sherlock&body=Vorrei%20usare%20Sherlock%20al%20prezzo:%20Gratis%20(solo%20demo)%0AUse%20case:%20">Gratis (solo demo)</a>
-<a class="btn ghost" href="mailto:stefano.scapigliati@gmail.com?subject=Pricing%20intent%20Sherlock&body=Vorrei%20usare%20Sherlock%20al%20prezzo:%202%E2%80%933%20%E2%82%AC%20/mese%0AUse%20case:%20">2–3 € / mese</a>
-<a class="btn ghost" href="mailto:stefano.scapigliati@gmail.com?subject=Pricing%20intent%20Sherlock&body=Vorrei%20usare%20Sherlock%20al%20prezzo:%204%E2%80%935%20%E2%82%AC%20/mese%0AUse%20case:%20">4–5 € / mese</a>
-<a class="btn ghost" href="mailto:stefano.scapigliati@gmail.com?subject=Pricing%20intent%20Sherlock&body=Vorrei%20usare%20Sherlock%20al%20prezzo:%20%3E%205%20%E2%82%AC%20/mese%0AUse%20case:%20">&gt; 5 € / mese</a>
-</div>
-<p style="font-size:12px;color:rgba(255,255,255,.5);margin-top:6px">Cliccando apri un’email precompilata: inviala per registrare la preferenza.</p>
-</section>
-
-
-<section id="faq" class="wrap section">
-<h2 style="font-size:28px;margin:0 0 8px">FAQ</h2>
-<div class="grid3">
-<div class="panel"><strong>È già su Play Store?</strong><p>Stiamo avviando il programma tester (closed testing). Lascia la tua email e riceverai il link di accesso.</p></div>
-<div class="panel"><strong>I miei documenti sono al sicuro?</strong><p>Sì. L’analisi avviene in locale quando possibile; quando serve il cloud, minimizziamo i dati e applichiamo cifratura end‑to‑end.</p></div>
-<div class="panel"><strong>Serve l’account PEC?</strong><p>No, puoi inviare via email; la PEC è consigliata per valore probatorio.</p></div>
-<div class="panel"><strong>Funziona con tutte le polizze?</strong><p>Supporto iniziale per polizze casa e infortuni; altre linee saranno aggiunte gradualmente.</p></div>
-</div>
-</section>
-
-
-<footer class="wrap">
-<div class="hstack" style="justify-content:space-between">
-<div class="hstack" style="color:rgba(255,255,255,.6)"><img src="favicon.svg" alt="ScapsLab" style="height:16px;width:16px;opacity:.8;margin-right:6px"/>ScapsLab</div>
-<div style="color:rgba(255,255,255,.6)">© <span id="year"></span> Sherlock</div>
-</div>
-</footer>
-
-
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
 </html>
-
-
